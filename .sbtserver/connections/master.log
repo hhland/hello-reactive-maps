@@ -1,0 +1,37 @@
+New log file opened at Tue Sep 22 19:00:56 CST 2015 by 16284@PC201410031226
+Taking next connection to: 58304
+New client attempting to connect on port: 58305-58304
+  Address = /192.168.1.101:58304
+This client on port 58305 has uuid a3289f26-778a-45e4-9247-571061246af8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-a3289f26-778a-45e4-9247-571061246af8
+Taking next connection to: 58304
+New client attempting to connect on port: 58306-58304
+  Address = /192.168.1.101:58304
+Handshake exception on socket: 58306
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58304
+New client attempting to connect on port: 58307-58304
+  Address = /192.168.1.101:58304
+This client on port 58307 has uuid f57f6fd0-a867-4b10-a29f-72e5c121f6ee configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-a3289f26-778a-45e4-9247-571061246af8, activator-f57f6fd0-a867-4b10-a29f-72e5c121f6ee
+Taking next connection to: 58304
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 58304
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 58304
